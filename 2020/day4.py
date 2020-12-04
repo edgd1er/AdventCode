@@ -23,7 +23,7 @@ for line in input_list:
     tmp += line + " "
     if line == "":
         lList.append(tmp.strip())
-        #print("line: {}, {}".format(idx, tmp))
+        # print("line: {}, {}".format(idx, tmp))
         idx += 1
         tmp = ""
 lList.append(tmp.strip())
@@ -79,7 +79,7 @@ def check_valid2(el):
     # hgt (Height) - a number followed by either cm or in:
     # If cm, the number must be at least 150 and at most 193.
     # If in, the number must be at least 59 and at most 76.
-    if d['hgt'][-2:] not in { 'cm' ,'in'}:
+    if d['hgt'][-2:] not in {'cm', 'in'}:
         return 0
     if d['hgt'].endswith("cm") and not (150 <= int(d['hgt'][:-2]) <= 193):
         return 0
@@ -139,7 +139,7 @@ def part2sol(data):
     count = 0
     for passport in passports:
         keys = {p.split(':')[0]: p.split(':')[1] for p in passport}
-        #print("keys: ",keys)
+        # print("keys: ",keys)
         if not all(k in keys for k in {'byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'}):
             continue
         if not keys['byr'].isdigit():
@@ -180,8 +180,8 @@ print("list: [0]: {0}".format(str(lList[0])))
 part1(lList)
 part2(lList)
 
-#print ("\n** Solution **")
-#data= open("day4.lst", 'r').read()
-#print(f'part1 sol: {part1sol(data)}')
-#print(f'part2 sol: {part2sol(data)}')
+# print ("\n** Solution **")
+# data= open("day4.lst", 'r').read()
+# print(f'part1 sol: {part1sol(data)}')
+# print(f'part2 sol: {part2sol(data)}')
 # part2(lList)
