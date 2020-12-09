@@ -1,4 +1,4 @@
-# AdventCode Day 1
+# AdventCode Day 8
 import time
 
 debug = False

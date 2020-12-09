@@ -1,4 +1,4 @@
-# AdventCode Day 1
+# AdventCode Day 2
 import re
 import time
 

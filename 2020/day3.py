@@ -1,4 +1,4 @@
-# AdventCode Day 1
+# AdventCode Day 3
 import time
 
 lList = []
