@@ -34,12 +34,8 @@ def timing(f):
 
 @timing
 def step1():
-    prev = ""
-    idx = 0
     larger = 0
     for idx in range(0, len(lValues) - 1):
-        if debug:
-            print(f"val[{idx + 1}]={lValues[idx + 1]}, prev: {lValues[idx]}")
         if lValues[idx + 1] - lValues[idx] > 0:
             larger += 1
     print(f"nb values: {len(lValues)}, Augmentations: {larger}")
